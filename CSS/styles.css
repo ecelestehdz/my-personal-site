@@ -1,0 +1,294 @@
+body{
+  background-color: lightblue;
+}
+/* navbar */
+#nav-bar{
+  margin:3%;
+
+}
+.navbar-nav{
+  text-align: right;
+  position: fixed;
+  z-index:5;
+}
+.nav-item{
+  color:white;
+  font-size: 20px;
+}
+
+.brandname{
+  color:red;
+
+}
+/* sky-sun */
+.sky{
+  position: relative;
+  top: 220px;
+  width:100%;
+  height:400px;
+  background-image: linear-gradient(lightblue,#c7a6a4,orange);
+
+}
+.theSun {
+	opacity: 1;
+	box-shadow: 0 0 15px 3px orange;
+	width: 200px;
+	height: 200px;
+	position: fixed;
+  top:450px;
+left: 42.7%;
+	animation: sunpulse 2s alternate infinite;
+	border-radius: 50%;
+	background-image: radial-gradient(circle, #ffd200 95%, #f7971e);
+  z-index: 0;
+}
+@media (max-width:1000px) {
+  .theSun{
+    top:380px;
+    left:40%;
+    width: 100px;
+    height:100px;
+  }
+}
+
+@keyframes sunpulse {
+	from {
+		box-shadow: 0 0 100px #ff0, 0 0 100px #ff0;
+	}
+	to {
+		box-shadow: 0 0 25px #ff0, 0 0 75px #ff0;
+	}
+}
+/* typewriter-intro */
+.container{
+      display: inline-block;
+      position: relative;
+      left: 10%;
+      width:auto;
+    }
+    .typed-out{
+      overflow: hidden;
+      border-right: .15em solid orange ;
+      white-space: nowrap;
+      animation:typing 2.5s steps(20, end) forwards;
+      width: 0;
+      color: white;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+/* skyline */
+.skyline-section{
+  padding:0;
+  overflow:hidden;
+  position:relative;
+  margin: 0;
+
+
+}
+
+.skyline-l{
+  float: left;
+width: 50%;
+position: relative;
+bottom:20%;
+}
+
+.skyline-r{
+  float: right;
+ width: 50%;
+ position: relative;
+ bottom: 20%;
+
+
+}
+/* icons */
+.icon-hr{
+  position: relative;
+  right: 17px;
+  top:10px;
+  color: gray;
+transform: rotate(90deg);
+width: 80px;
+border: none;
+border-bottom-style: solid;
+}
+.html5{
+  position: absolute;
+  top:20%;
+  left:20%;
+  color:lightgray;
+ max-width: 10px;
+ height: auto;
+}
+.css3{
+  position: absolute;
+  top:20%;
+  left:70%;
+  color:lightgray;
+  font-size: 16px;
+ max-width: 10px;
+ height: auto;
+}
+.javasript{
+  position: absolute;
+  top:10%;
+  left:36.6%;
+  color:lightgray;
+  font-size: 16px;
+ max-width: 10px;
+ height: auto;
+}
+.bootstrap{
+  position: absolute;
+  top:10%;
+  left:86.5%;
+  color:lightgray;
+  font-size: 16px;
+ max-width: 10px;
+ height: auto;
+}
+@media (max-width:1000px){
+  .html5{
+    font-size: 10px;
+  }
+  .css3{
+    font-size: 10px;
+  }
+  .javasript{
+    font-size: 10px;
+  }
+  .bootstrap{
+    font-size: 10px;
+  }
+}
+@media (max-width:1000px) {
+  .icon-hr{
+    color: transparent;
+  }
+}
+
+
+/* about-me */
+#about-me{
+  background-image:linear-gradient(black,black,#0E0A14);
+  color:white;
+z-index:1;
+position: relative;
+display:flex;
+height: 900px;
+max-height:950px;
+overflow: hidden;
+text-align: center;
+margin: 0;
+top:-70px;
+
+}
+
+.about-me-title{
+  position: relative;
+  margin: auto 0;
+}
+@media (max-width:1000px){
+  .about-me-title{
+position: relative;
+margin: auto;
+clear: right;
+
+  }
+}
+  @media (max-width:1000px){
+    .about-me-body{
+      display: inline-flex;
+    position: relative;
+  height: auto;
+  float: none;
+    }
+}
+
+.about-me-body{
+    position: relative;
+    margin: auto 0;
+  padding: 5%;
+  }
+
+/* Projects */
+#projects{
+height:900px;
+width: 100%;
+position: relative;
+z-index:1;
+text-align: center;
+background-image: linear-gradient(#0E0A14,#1D1D43,#3D3772);
+top:-70px;
+}
+
+/* moon */
+.theMoon {
+	opacity: 1;
+box-shadow: 25px 10px 0 0 lightgray;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+  top:16%;
+  left: 73%;
+  right:43%;
+	animation: pulse 3s alternate infinite;
+	border-radius: 50%;
+	background-image: radial-gradient(circle, white 95%, transparent white);
+  z-index: 0;
+}
+@media (max-width:1000px){
+  .theMoon{
+    left:53%;
+  }
+}
+
+
+
+
+@keyframes theMoon {
+	from {
+		box-shadow: 0 0 100px white, 0 0 100px white;
+	}
+	to {
+		box-shadow: 0 0 25px white, 0 0 75px white;
+	}
+}
+
+
+
+
+
+
+
+/* contact-me */
+
+#contact-me{
+width: 100%;
+position: relative;
+z-index:1;
+text-align: center;
+color: white;
+top:-70px;
+padding:10%;
+}
+
+/* footer */
+#footer{
+  background-color: black;
+height: 100px;
+width: 100%;
+position: relative;
+z-index:1;
+text-align: center;
+bottom:0;
+top:-70px;
+}
+
+#messagebox{
+padding: 20%;
+
+}
