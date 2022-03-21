@@ -3,15 +3,17 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Lee's Portfolio</title>
+    <title>Emely's Portfolio</title>
 
-    <!-- Bootstrap + CSS Stylesheet + Animation.css -->
+    <!-- Bootstrap + CSS Stylesheet + Animation.css + Javasript -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/styles.css">
     <link
    rel="stylesheet"
    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
  />
+<script src="javascript.js/first-try.js"> </script>
+
     <!-- Site Icon -->
 <link rel="icon" href="images/favicon (1).ico" />
 
@@ -19,6 +21,7 @@
 
 <!-- Font-Awesome-Icons -->
   <script src="https://kit.fontawesome.com/73e22948ba.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/20de7c5f49.js" crossorigin="anonymous"></script>
 
 
   </head>
@@ -28,7 +31,7 @@
 
   <nav class="navbar navbar-block navbar-expand-lg navbar-dark">
   <div class="container-fluid">
-    <a class="navbar-brand animate__animated animate__bounce"  href class="brandname" ="index.html">Lee</a>
+    <a class="navbar-brand animate__animated animate__bounce"  href class="brandname" ="index.html">Emely</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -59,7 +62,7 @@
   <div class="sky">
 <!-- typewriter-intro -->
 <div class="container">
-  <h2 class="typed-out"> Hi, I'm Lee I am a software developer.</h2>
+  <h2 class="typed-out"> Hi, I'm Emely I am a software developer.</h2>
 </div>
 
 
@@ -107,7 +110,7 @@
 <h1 class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about-me-title">about me</h1>
 
 <p class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about-me-body">
-My name is Lee and I am a self-taught software engineer from New York.
+My name is Emely and I am a self-taught software engineer from New York.
 I am proficient in HTML, CSS and learning Javasript. Currently I am self-teaching
 with the Multiverse course. My goal is to build amazing projects while interning at a tech company
 with the help of multiverse. With my projects I hope to learn as much as I can while helping my community.
@@ -137,25 +140,40 @@ with the help of multiverse. With my projects I hope to learn as much as I can w
         </div>
     </div>
       </div>
+<!-- project display boxes -->
+<div class="row portfolio-img">
+
+<div class="portfolio-img col-md-4"  >
+<a class="portfolio-link" href="https://ecelestehdz.github.io/my-portfolio/">  <img class="portfolio-img " height="250px" src="images/leesnapshot.png" alt="portfolio snapshot">
+<p class="site-img-title">
+  My Personal Website
+</p>
+
+</a>
+</div>
 
 
+<div class="portfolio-img col-md-4">
+
+</div>
 
 
+<div class=" portfolio-img col-md-4">
 
-
-
+</div>
+</div>
 
     </section>
 
 <!-- contact-me -->
     <section id="contact-me">
-      <h2 class="contact-me-title">Contact me!</h2>
+      <h1 class="contact-me-title animate__animated animate__bounce">Get in touch!</h1>
 
 <!-- contact me boxes -->
 
 <div class="row">
     <div id="messagebox" class="col-lg-12">
-        <form action="" method="POST" enctype="multipart/form-data" id="form_id">
+        <form action="mailto:ecelestehdz@gmail.com " method="POST" enctype="multipart/form-data" id="form_id">
             <div class="form-group">
                  <h5><label id="inputname" for="inputName">Name</label></h5>
 
@@ -172,11 +190,16 @@ with the help of multiverse. With my projects I hope to learn as much as I can w
                 <input id="inputtel" type="tel" name="career[mobile]" class="form-control" tabindex="3" placeholder="Enter your mobile number" pattern="[0-9]{10}" maxlength="10" >
             </div>
             <div class="form-group">
-                 <h5><label id="inputmessage" for="inputMessage">Message</label></h5>
+                 <h5><label  for="inputMessage">Message</label></h5>
 
-                <input type="text" name="career[message]" class="form-control" tabindex="4" placeholder="Write your details" required>
+                 <script id="inputmessage" type="text/javascript" src="/js/count-chars.js"></script>
+                 <form action="mailto:ecelestehdz@gmail.com" method="post">
+                 <p >Characters Remaining: <span id="char_count"></span><br><textarea name="submit" id="textbox" class="form-control" rows="3" cols="60" onFocus="countChars('textbox','char_count',140)" onKeyDown="countChars('textbox','char_count',140)" onKeyUp="countChars('textbox','char_count',140)"></textarea></p>
+                 <p><input type="submit" id="submitbtn" value="Submit" /></p>
+                 </form>
+
+
             </div>
-            <button id="submitbtn" type="submit" name="submit" class="btn btn-primary btn-block" tabindex="5">Submit</button>
         </form>
     </div>
 </div>
@@ -201,24 +224,11 @@ with the help of multiverse. With my projects I hope to learn as much as I can w
     <!-- footer -->
 
     <section id="footer">
-
+      <a class="social-link" target="_blank" href="https://github.com/ecelestehdz"><i class="fa-brands fa-github"></i></a>
+<a class="social-link" target="blank" href="https://www.linkedin.com/in/emely-hernandez-developer"><i class="fa-brands fa-linkedin fa-black"></i></a>
 
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </body>
 </html>
+
