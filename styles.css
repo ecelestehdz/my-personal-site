@@ -232,7 +232,7 @@ box-shadow: 25px 10px 0 0 lightgray;
 	width: 150px;
 	height: 150px;
 	position: absolute;
-  top:16%;
+  top:6%;
   left: 73%;
   right:43%;
 	animation: pulse 3s alternate infinite;
@@ -246,9 +246,6 @@ box-shadow: 25px 10px 0 0 lightgray;
   }
 }
 
-
-
-
 @keyframes theMoon {
 	from {
 		box-shadow: 0 0 100px white, 0 0 100px white;
@@ -257,38 +254,109 @@ box-shadow: 25px 10px 0 0 lightgray;
 		box-shadow: 0 0 25px white, 0 0 75px white;
 	}
 }
+/* project display */
+.portfolio-img{
+  position: relative;
+  padding:1%;
+  margin:0;
+  top:50px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.portfolio-link{
+  color:white;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.site-img-title{
+  color:white;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.portfolio-link:hover{
+  background-color: white;
+  opacity:20%;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
 
-
-
-
+}
 
 
 
 /* contact-me */
 
 #contact-me{
-width: 100%;
+  background-image: linear-gradient(#3D3772, lightblue, white)  ;
 position: relative;
-z-index:1;
+z-index:4;
 text-align: center;
 color: white;
 top:-70px;
-padding:10%;
+padding:4%;
+}
+.contact-me-title{
+  animation: 2s;
+  font-weight: bold;
+
+  margin: 0;
+}
+
+
+#inputmessage{
+  height:150px;
+  vertical-align: top;
+  word-wrap: normal;
+
+}
+
+
+
+#messagebox{
+padding: 20%;
+padding-top: 5%;
+padding-bottom: 5%;
+}
+textarea{
+  max-height:300px;
+
+}
+h5{
+  text-align: left;
+  padding: 1%;
+  padding-left: 0;
+}
+
+#submitbtn{
+  background-color: #3D3772;
+  border: none;
+  padding:3%;
+  padding-top:1%;
+  padding-bottom: 1%;
+  margin: 20px;
+  color:white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#submitbtn:hover{
+  background-color: lightblue;
 }
 
 /* footer */
 #footer{
-  background-color: black;
-height: 100px;
-width: 100%;
 position: relative;
-z-index:1;
+z-index:4;
 text-align: center;
-bottom:0;
-top:-70px;
+bottom:10px;
 }
-
-#messagebox{
-padding: 20%;
-
+.social-link{
+  color:white;
+  padding: 1%;
+  padding-bottom:3%;
+  font-size: 20px;
+}
+.social-link:hover{
+  color:black;
 }
