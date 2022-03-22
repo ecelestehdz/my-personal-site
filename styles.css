@@ -4,12 +4,12 @@ body{
 /* navbar */
 #nav-bar{
   margin:3%;
-
 }
 .navbar-nav{
   text-align: right;
   position: fixed;
   z-index:5;
+
 }
 .nav-item{
   color:white;
@@ -195,6 +195,7 @@ top:-70px;
   .about-me-title{
 position: relative;
 margin: auto;
+top:5%;
 clear: right;
 
   }
@@ -243,6 +244,7 @@ box-shadow: 25px 10px 0 0 lightgray;
 @media (max-width:1000px){
   .theMoon{
     left:53%;
+  opacity: 0;
   }
 }
 
@@ -354,9 +356,18 @@ bottom:10px;
 .social-link{
   color:white;
   padding: 1%;
-  padding-bottom:3%;
-  font-size: 20px;
+  padding-bottom:0;
+  font-size: 18px;
+  margin-bottom: 0;
+  position:relative;
+  bottom:20px;
 }
+
+#social-icons{
+  padding:0;
+  margin:0;
+}
+
 .social-link:hover{
   color:black;
 }
